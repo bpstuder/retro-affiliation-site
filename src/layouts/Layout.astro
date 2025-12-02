@@ -1,0 +1,30 @@
+---
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title ? `${title} | Le Coin du Rétro` : 'Le Coin du Rétro'}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Le Coin du Rétro – Consoles portables</a></h1>
+      <nav>
+        <a href="/">Accueil</a>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <hr />
+      <p>© {new Date().getFullYear()} Le Coin du Rétro</p>
+    </footer>
+  </body>
+</html>

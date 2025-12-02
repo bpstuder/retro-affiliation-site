@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const consoles = await getCollection('consoles');
+
+  return consoles.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { data, body } = entry;
+---
+
+<Layout title={data.title}>
+  <article>
+    <h2>{data.title}</h2>
+    {data.image && (
+      <p>
+        <img src={data.image} alt={data.title} style="max-width: 300px;" />
+      </p>
+    )}
+    {data.tagline && <p><em>{data.tagline}</em></p>}
+
+    <p><strong>Prix indicatif :</strong> {data.price_eur} €</p>
+    <p><strong>Idéal pour :</strong> {data.ideal_for}</p>
+
+    <hr />
+
+    <!-- Contenu Markdown (intro, sections, etc.) -->
+    <section>
+      {body}
+    </section>
+
+    <hr />
+
+    <h3>Où l’acheter ?</h3>
+    <ul>
+      {data.amazon_url && (
+        <li>
+          <a href={data.amazon_url} target="_blank" rel="noopener noreferrer">
+            Voir le prix sur Amazon
+          </a>
+        </li>
+      )}
+      {data.aliexpress_url && (
+        <li>
+          <a href={data.aliexpress_url} target="_blank" rel="noopener noreferrer">
+            Voir le prix sur AliExpress
+          </a>
+        </li>
+      )}
+    </ul>
+  </article>
+</Layout>
