@@ -12,8 +12,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install des dépendances
-# (npm ci si package-lock présent, sinon npm install)
-RUN if [ -f package-lock.json ]; then npm ci; else npm install; fi
+RUN npm install
 
 # Copie du reste du projet (src, public, astro.config, etc.)
 COPY . .
