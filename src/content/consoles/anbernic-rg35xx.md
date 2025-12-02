@@ -1,6 +1,5 @@
 ---
 title: "Anbernic RG35XX – Une petite console rétro parfaite pour découvrir l’émulation sans se prendre la tête."
-slug: "anbernic-rg35xx"
 brand: "anbernic-rg35xx"
 model: "RG35XX"
 price_eur: 65
