@@ -12,46 +12,102 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { data, body } = entry;
+const { data } = entry;
+const { Content } = await entry.render();
 ---
 
 <Layout title={data.title}>
-  <article>
-    <h2>{data.title}</h2>
-    {data.image && (
-      <p>
-        <img src={data.image} alt={data.title} style="max-width: 300px;" />
-      </p>
-    )}
-    {data.tagline && <p><em>{data.tagline}</em></p>}
+  <article class="console-page">
+    <header class="console-header">
+      <div class="console-main-info">
+        <h2>{data.title}</h2>
+        {data.tagline && <p class="console-tagline">{data.tagline}</p>}
+        <p class="console-meta">
+          <span>{data.brand} · {data.model}</span>
+          {data.price_eur && <span>{data.price_eur} €</span>}
+          {data.ideal_for && <span>{data.ideal_for}</span>}
+        </p>
+      </div>
 
-    <p><strong>Prix indicatif :</strong> {data.price_eur} €</p>
-    <p><strong>Idéal pour :</strong> {data.ideal_for}</p>
+      {data.image && (
+        <div class="console-image">
+          <img src={data.image} alt={data.title} loading="lazy" />
+        </div>
+      )}
+    </header>
 
-    <hr />
-
-    <section>
-      {body}
+    <section class="console-specs">
+      <h3>Fiche technique</h3>
+      <div class="specs-grid">
+        {data.screen_size && (
+          <div class="spec-item">
+            <dt>Écran</dt>
+            <dd>{data.screen_size} {data.screen_type}</dd>
+          </div>
+        )}
+        {data.cpu && (
+          <div class="spec-item">
+            <dt>Processeur</dt>
+            <dd>{data.cpu}</dd>
+          </div>
+        )}
+        {data.ram && (
+          <div class="spec-item">
+            <dt>RAM</dt>
+            <dd>{data.ram}</dd>
+          </div>
+        )}
+        {data.storage && (
+          <div class="spec-item">
+            <dt>Stockage</dt>
+            <dd>{data.storage}</dd>
+          </div>
+        )}
+        {data.battery && (
+          <div class="spec-item">
+            <dt>Batterie</dt>
+            <dd>{data.battery}</dd>
+          </div>
+        )}
+        {data.os && (
+          <div class="spec-item">
+            <dt>Système</dt>
+            <dd>{data.os}</dd>
+          </div>
+        )}
+      </div>
     </section>
 
-    <hr />
+    <section class="console-body">
+      <Content />
+    </section>
 
-    <h3>Où l’acheter ?</h3>
-    <ul>
-      {data.amazon_url && (
-        <li>
-          <a href={data.amazon_url} target="_blank" rel="noopener noreferrer">
+    <section class="console-buy">
+      <div>
+        <strong>Où acheter cette console ?</strong>
+      </div>
+      <div class="console-buy-buttons">
+        {data.amazon_url && (
+          <a
+            class="btn-cta"
+            href={data.amazon_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Voir le prix sur Amazon
           </a>
-        </li>
-      )}
-      {data.aliexpress_url && (
-        <li>
-          <a href={data.aliexpress_url} target="_blank" rel="noopener noreferrer">
-            Voir le prix sur AliExpress
+        )}
+        {data.aliexpress_url && (
+          <a
+            class="btn-cta secondary"
+            href={data.aliexpress_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Voir sur AliExpress
           </a>
-        </li>
-      )}
-    </ul>
+        )}
+      </div>
+    </section>
   </article>
 </Layout>

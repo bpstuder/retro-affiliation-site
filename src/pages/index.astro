@@ -7,16 +7,20 @@ const consoles = await getCollection('consoles');
 
 <Layout title="Consoles rétro portables">
   <h2>Consoles rétro portables</h2>
-  <p>Comparatifs et fiches de consoles rétro portables pour t’aider à choisir celle qui te convient.</p>
+  <p>Comparatifs et fiches de consoles rétro portables pour t’aider à choisir la meilleure machine selon ton budget et tes envies.</p>
 
-  <ul>
+  <div class="console-list">
     {consoles.map((entry) => (
-      <li>
-        <a href={`/consoles/${entry.slug}`}>
-          <strong>{entry.data.title}</strong><br />
-          <small>{entry.data.tagline}</small>
-        </a>
-      </li>
+      <a class="console-card" href={`/consoles/${entry.slug}`}>
+        <h3 class="console-card-title">{entry.data.title}</h3>
+        {entry.data.tagline && (
+          <p class="console-card-tagline">{entry.data.tagline}</p>
+        )}
+        <p class="console-card-meta">
+          {entry.data.brand} · {entry.data.model}
+          {entry.data.price_eur && <> · {entry.data.price_eur} €</>}
+        </p>
+      </a>
     ))}
-  </ul>
+  </div>
 </Layout>

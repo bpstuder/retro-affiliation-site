@@ -8,23 +8,303 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <title>{title ? `${title} | Le Coin du Rétro` : 'Le Coin du Rétro'}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --bg: #0f172a;
+        --bg-card: #020617;
+        --text: #e5e7eb;
+        --accent: #38bdf8;
+        --accent-soft: rgba(56, 189, 248, 0.15);
+        --border-subtle: rgba(148, 163, 184, 0.3);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #0f172a 0, #020617 60%, #020617 100%);
+        color: var(--text);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border-subtle);
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+      }
+
+      header .header-inner {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1rem 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.25rem;
+        margin: 0;
+      }
+
+      header h1 a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      header nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      .page-container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 3rem;
+      }
+
+      footer {
+        border-top: 1px solid var(--border-subtle);
+        padding: 1rem 1.25rem;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #9ca3af;
+        background: #020617;
+      }
+
+      /* Page console */
+
+      .console-page {
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));
+        border-radius: 1rem;
+        border: 1px solid var(--border-subtle);
+        box-shadow:
+          0 18px 50px rgba(0, 0, 0, 0.8),
+          0 0 0 1px rgba(15, 23, 42, 0.8);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .console-header {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+        gap: 1.5rem;
+        align-items: center;
+      }
+
+      .console-main-info h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.6rem;
+      }
+
+      .console-tagline {
+        margin: 0 0 0.75rem;
+        font-style: italic;
+        color: #9ca3af;
+      }
+
+      .console-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: #9ca3af;
+      }
+
+      .console-meta span::before {
+        content: "• ";
+        color: var(--accent);
+      }
+
+      .console-image {
+        justify-self: flex-end;
+      }
+
+      .console-image img {
+        display: block;
+        max-width: 260px;
+        width: 100%;
+        border-radius: 0.75rem;
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        box-shadow:
+          0 14px 30px rgba(0, 0, 0, 0.8),
+          0 0 0 1px rgba(15, 23, 42, 0.9);
+      }
+
+      .console-specs {
+        background: var(--bg-card);
+        border-radius: 0.9rem;
+        border: 1px solid var(--border-subtle);
+        padding: 1rem 1.25rem;
+      }
+
+      .console-specs h3 {
+        margin-top: 0;
+        font-size: 1.1rem;
+      }
+
+      .specs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.75rem 1.5rem;
+        margin-top: 0.75rem;
+      }
+
+      .spec-item {
+        border-left: 2px solid var(--accent-soft);
+        padding-left: 0.75rem;
+      }
+
+      .spec-item dt {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #9ca3af;
+        margin-bottom: 0.25rem;
+      }
+
+      .spec-item dd {
+        margin: 0;
+        font-size: 0.95rem;
+      }
+
+      .console-body {
+        line-height: 1.7;
+      }
+
+      .console-body h2,
+      .console-body h3 {
+        margin-top: 1.4rem;
+      }
+
+      .console-body ul {
+        padding-left: 1.25rem;
+      }
+
+      .console-buy {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px dashed var(--border-subtle);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .console-buy-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .btn-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.55rem 1rem;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #0b1120;
+        font-weight: 600;
+        font-size: 0.9rem;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn-cta.secondary {
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid var(--accent-soft);
+      }
+
+      .btn-cta:hover {
+        filter: brightness(1.05);
+        text-decoration: none;
+      }
+
+      /* Page liste */
+
+      .console-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .console-card {
+        background: var(--bg-card);
+        border-radius: 0.8rem;
+        border: 1px solid var(--border-subtle);
+        padding: 0.9rem 1rem;
+        text-decoration: none;
+        display: block;
+      }
+
+      .console-card-title {
+        margin: 0 0 0.35rem;
+        font-size: 1rem;
+      }
+
+      .console-card-tagline {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #9ca3af;
+      }
+
+      .console-card-meta {
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
+        color: #9ca3af;
+      }
+
+      .console-card:hover {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+      }
+
+      @media (max-width: 720px) {
+        .console-header {
+          grid-template-columns: 1fr;
+        }
+        .console-image {
+          justify-self: flex-start;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1><a href="/">Le Coin du Rétro – Consoles portables</a></h1>
-      <nav>
-        <a href="/">Accueil</a>
-      </nav>
-      <hr />
+      <div class="header-inner">
+        <h1><a href="/">Le Coin du Rétro – Consoles portables</a></h1>
+        <nav>
+          <a href="/">Accueil</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <div class="page-container">
       <slot />
-    </main>
+    </div>
 
     <footer>
-      <hr />
-      <p>© {new Date().getFullYear()} Le Coin du Rétro</p>
+      © {new Date().getFullYear()} Le Coin du Rétro
     </footer>
   </body>
 </html>
