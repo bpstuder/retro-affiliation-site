@@ -6,20 +6,26 @@ const consoles = await getCollection('consoles');
 ---
 
 <Layout title="Consoles rétro portables">
-  <h2>Consoles rétro portables</h2>
-  <p>Comparatifs et fiches de consoles rétro portables pour t’aider à choisir la meilleure machine selon ton budget et tes envies.</p>
+  <h2 class="page-title">Consoles rétro portables</h2>
+  <p class="page-subtitle">
+    Fiches détaillées et comparatifs pour choisir la meilleure console portable selon ton budget,
+    tes consoles de cœur (Game Boy, SNES, PS1...) et ton niveau.
+  </p>
 
   <div class="console-list">
     {consoles.map((entry) => (
       <a class="console-card" href={`/consoles/${entry.slug}`}>
-        <h3 class="console-card-title">{entry.data.title}</h3>
-        {entry.data.tagline && (
-          <p class="console-card-tagline">{entry.data.tagline}</p>
-        )}
-        <p class="console-card-meta">
-          {entry.data.brand} · {entry.data.model}
-          {entry.data.price_eur && <> · {entry.data.price_eur} €</>}
-        </p>
+        <div class="console-card-inner">
+          <h3 class="console-card-title">{entry.data.title}</h3>
+          {entry.data.tagline && (
+            <p class="console-card-tagline">{entry.data.tagline}</p>
+          )}
+          <p class="console-card-meta">
+            <span>{entry.data.brand} · {entry.data.model}</span>
+            {entry.data.price_eur && <span>{entry.data.price_eur} €</span>}
+            {entry.data.ideal_for && <span>{entry.data.ideal_for}</span>}
+          </p>
+        </div>
       </a>
     ))}
   </div>

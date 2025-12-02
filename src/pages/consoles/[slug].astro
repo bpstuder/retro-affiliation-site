@@ -22,22 +22,32 @@ const { Content } = await entry.render();
       <div class="console-main-info">
         <h2>{data.title}</h2>
         {data.tagline && <p class="console-tagline">{data.tagline}</p>}
-        <p class="console-meta">
-          <span>{data.brand} · {data.model}</span>
-          {data.price_eur && <span>{data.price_eur} €</span>}
-          {data.ideal_for && <span>{data.ideal_for}</span>}
-        </p>
+
+        <div class="console-meta">
+          <span class="console-pill accent">{data.brand} · {data.model}</span>
+          {data.price_eur && (
+            <span class="console-pill">{data.price_eur} €</span>
+          )}
+          {data.ideal_for && (
+            <span class="console-pill">{data.ideal_for}</span>
+          )}
+        </div>
       </div>
 
       {data.image && (
         <div class="console-image">
-          <img src={data.image} alt={data.title} loading="lazy" />
+          <div class="console-image-inner">
+            <img src={data.image} alt={data.title} loading="lazy" />
+          </div>
         </div>
       )}
     </header>
 
     <section class="console-specs">
-      <h3>Fiche technique</h3>
+      <div class="console-specs-header">
+        <h3>Fiche technique</h3>
+        <span>Résumé des specs principales</span>
+      </div>
       <div class="specs-grid">
         {data.screen_size && (
           <div class="spec-item">
@@ -83,7 +93,7 @@ const { Content } = await entry.render();
     </section>
 
     <section class="console-buy">
-      <div>
+      <div class="console-buy-label">
         <strong>Où acheter cette console ?</strong>
       </div>
       <div class="console-buy-buttons">
