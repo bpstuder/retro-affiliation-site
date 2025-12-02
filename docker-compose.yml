@@ -6,4 +6,4 @@ services:
     container_name: retro_site
     restart: unless-stopped
     ports:
-      - "8080:80"    # change en "8080:80" si tu as déjà quelque chose sur 80
+      - "12080:80"    # change en "8080:80" si tu as déjà quelque chose sur 80
