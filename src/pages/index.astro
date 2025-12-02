@@ -12,7 +12,7 @@ const consoles = await getCollection('consoles');
   <ul>
     {consoles.map((entry) => (
       <li>
-        <a href={`/consoles/${entry.data.slug}`}>
+        <a href={`/consoles/${entry.slug}`}>
           <strong>{entry.data.title}</strong><br />
           <small>{entry.data.tagline}</small>
         </a>

@@ -4,7 +4,6 @@ const consoles = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
-    slug: z.string(),
     brand: z.string(),
     model: z.string(),
     price_eur: z.number(),
