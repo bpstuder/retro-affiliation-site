@@ -19,15 +19,6 @@ tagline: "Une petite console rétro parfaite pour découvrir l’émulation sans
 
 L’Anbernic RG35XX est une console rétro portable compacte pensée pour ceux qui veulent découvrir l’émulation sans se perdre dans les réglages.
 
-## Fiche technique
-
-- **Écran** : 3.5" IPS
-- **Processeur** : Allwinner H700
-- **RAM** : 256Mo
-- **Stockage** : Carte microSD
-- **Batterie** : 2600 mAh
-- **Système** : Linux / GarlicOS
-
 ## Points forts
 
 - Format compact, tient bien en main
