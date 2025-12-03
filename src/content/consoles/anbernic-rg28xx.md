@@ -1,33 +1,8 @@
----
-title: "Anbernic RG28XX"
-slug: "anbernic-rg28xx"
-brand: "Anbernic"
-model: "RG28XX"
-price_eur: 0
-os: ""
-ideal_for: ""
-image: ""
-amazon_url: ""
-aliexpress_url: ""
-screen_size: ""
-screen_type: ""
-cpu: ""
-ram: ""
-storage: ""
-battery: ""
-tagline: ""
----
-
-
-
-## Points forts
-
-
-
-## Points faibles
-
-
-
-## À qui s’adresse la Anbernic RG28XX ?
-
-
+LS0tCnRpdGxlOiAiQW5iZXJuaWMgUkcyOFhYIgpzbHVnOiAiYW5iZXJuaWMt
+cmcyOHh4IgpicmFuZDogIkFuYmVybmljIgptb2RlbDogIlJHMjhYWCIKcHJp
+Y2VfZXVyOiAwCm9zOiAiIgppZGVhbF9mb3I6ICIiCmltYWdlOiAiIgphbWF6
+b25fdXJsOiAiIgphbGlleHByZXNzX3VybDogIiIKc2NyZWVuX3NpemU6ICIi
+CnNjcmVlbl90eXBlOiAiIgpjcHU6ICIiCnJhbTogIiIKc3RvcmFnZTogIiIK
+YmF0dGVyeTogIiIKdGFnbGluZTogIiIKLS0tCgoKCiMjIFBvaW50cyBmb3J0
+cwoKCgojIyBQb2ludHMgZmFpYmxlcwoKCgojIyDDgCBxdWkgc+KAmWFkcmVz
+c2UgbGEgQW5iZXJuaWMgUkcyOFhYID8KCgo=
