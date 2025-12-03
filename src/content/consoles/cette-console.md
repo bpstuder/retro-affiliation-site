@@ -1,41 +1,39 @@
 ---
-title: "cette console – La pocket console 16:9 pensée pour l’émulation moderne"
+title: "cette console – La portable compacte qui fait tourner vos classiques en 720p"
 slug: "cette-console"
 brand: ""
 model: ""
 price_eur: 0
-os: "Linux / firmware propriétaire TrimUI orienté émulation"
+os: "Linux custom orienté émulation (interface TrimUI)"
 ideal_for: ""
-image: "https://trimui.net/cdn/shop/files/trimui-smart-pro-front.png"
+image: "https://trimui.net/cdn/shop/files/1_0b25f0a4-4d46-4c8a-a737-0f45f83fad30.jpg"
 amazon_url: ""
 aliexpress_url: ""
-screen_size: "4,96 pouces"
-screen_type: "IPS, 1280 x 720, format 16:9, écran laminé avec verre trempé"
-cpu: "Rockchip RK3566, quad-core ARM Cortex-A55 jusqu’à 1,8 GHz"
+screen_size: "5,0 pouces"
+screen_type: "IPS, résolution 720p, format 16:9"
+cpu: "Rockchip RK3566 quad-core ARM Cortex-A55 jusqu’à 1,8 GHz"
 ram: "2 Go LPDDR4"
-storage: "Carte microSD (jusqu’à 512 Go ou plus selon la carte) + mémoire interne minimale pour l’OS"
-battery: "5 000 mAh (autonomie typique 6 à 8 heures selon l’usage)"
-tagline: "La pocket console 16:9 pensée pour l’émulation moderne"
+storage: "Carte microSD (souvent fournie en 64 à 128 Go selon les packs, extensible)"
+battery: "≈ 5 000 mAh (autonomie typique 5 à 7 heures selon l’usage)"
+tagline: "La portable compacte qui fait tourner vos classiques en 720p"
 ---
 
-La TrimUI Smart Pro est une console rétro portable compacte, conçue pour profiter confortablement des jeux 2D et 3D jusqu’à la génération PS1/PSP et au-delà. Son écran IPS 4,96" en 720p au format 16:9 offre une image nette et lumineuse, idéale pour les jeux portables comme pour les consoles de salon émulées. Propulsée par un processeur RK3566 et 2 Go de RAM, elle assure une émulation fluide tout en restant économe en énergie. Sa batterie de 5 000 mAh garantit de longues sessions de jeu sans recharge. Avec son OS basé sur Linux orienté émulation, la Smart Pro démarre rapidement et vous permet d’accéder à vos jeux en quelques secondes.
+La TrimUI Smart Pro est une console rétro portable pensée pour profiter de vos jeux classiques avec confort et fluidité. Son écran IPS de 5 pouces en 720p offre une image nette et colorée, parfaite pour la 2D comme pour la 3D. Propulsée par un processeur RK3566 et 2 Go de RAM, elle gère sans broncher une large gamme de systèmes, des 8/16 bits aux consoles 3D plus exigeantes. Son OS Linux optimisé pour l’émulation propose une interface claire, rapide et orientée joueur. Avec sa bonne autonomie et son format compact, c’est une machine idéale pour jouer partout, à tout moment.
 
 ## Points forts
 
-- Écran IPS 4,96" 720p lumineux et confortable en 16:9
-- Processeur RK3566 efficace pour une émulation fluide jusqu’à PS1/PSP et de nombreux systèmes 3D légers
-- Autonomie solide grâce à la batterie 5 000 mAh
-- Interface Linux optimisée émulation avec démarrage rapide
-- Format compact et léger, facile à emporter partout
-- Stockage extensible via microSD pour emporter une vaste ludothèque
+- Écran IPS 5" 720p très lisible et agréable pour le rétro
+- Processeur RK3566 performant pour une large compatibilité d’émulation
+- Interface Linux TrimUI simple, rapide et pensée pour le jeu
+- Format compact et léger, facile à glisser dans un sac
+- Autonomie confortable pour de longues sessions nomades
 
 ## Points faibles
 
-- Performances limitées pour les systèmes 3D très exigeants (GameCube/PS2 seulement très partiellement jouables)
-- OS orienté émulation : moins polyvalent qu’un Android complet pour les applis non liées au jeu
-- Dépend fortement de la carte microSD pour la capacité de stockage réelle
-- Configuration initiale des émulateurs et BIOS pouvant demander un peu de temps aux débutants
+- OS fermé et moins personnalisable qu’un Android complet
+- Stockage principalement via microSD, dépend de la carte choisie
+- Finitions et ergonomie moins premium que les consoles très haut de gamme
 
 ## À qui s’adresse la cette console ?
 
-La TrimUI Smart Pro s’adresse aux passionnés de rétrogaming qui veulent une console portable simple, efficace et endurante pour emporter leurs jeux partout. Elle conviendra parfaitement à ceux qui privilégient les consoles 8/16/32 bits, la PS1, la PSP et les systèmes d’arcade, tout en recherchant un bon confort visuel grâce au format 16:9 et à la résolution 720p. Les utilisateurs qui souhaitent une machine dédiée à l’émulation, sans se perdre dans des fonctionnalités multimédia superflues, y trouveront un excellent compromis entre puissance, autonomie et portabilité.
+La TrimUI Smart Pro s’adresse aux amateurs de retrogaming qui veulent une console portable simple à utiliser, puissante pour sa taille et dédiée exclusivement à l’émulation. Elle conviendra parfaitement à ceux qui souhaitent retrouver leurs jeux 8/16 bits, mais aussi des consoles plus récentes, sans se perdre dans des réglages complexes. Son format compact en fait un excellent compagnon de voyage ou de trajet quotidien, idéal pour les joueurs qui veulent retrouver leurs classiques partout, sans se ruiner ni sacrifier le confort d’affichage.
