@@ -1,41 +1,41 @@
 ---
-title: "Anbernic RG28XX – La pocket rétro qui tient vraiment dans la main"
+title: "Anbernic RG28XX – La mini console qui fait revivre vos classiques partout"
 slug: "anbernic-rg28xx"
 brand: "Anbernic"
 model: "RG28XX"
 price_eur: 0
 os: ""
 ideal_for: ""
-image: "https://anbernic.com/cdn/shop/files/RG28XX-1_1024x1024.jpg"
+image: "/images/consoles/anbernic-rg28xx.jpg"
 amazon_url: ""
 aliexpress_url: ""
 screen_size: "2.83 pouces"
 screen_type: "2.83\" IPS, angle de vision complet, OCA full lamination"
-cpu: "ARM Cortex-A9 dual-core (SoC rétro dédié, fréquence ~1,2 GHz)"
+cpu: "SoC rétro dédié avec CPU ARM Cortex-A9 double cœur ~1,2 GHz"
 ram: "256 Mo"
-storage: "1 ou 2 slots carte microSD (ROM système + jeux, carte non fournie selon version)"
-battery: "Batterie lithium 3100 mAh (autonomie typique 6 à 8 heures)"
-tagline: "La pocket rétro qui tient vraiment dans la main"
+storage: "1 ou 2 slots microSD (carte système + carte jeux selon version, cartes non fournies sur certains packs)"
+battery: "Batterie lithium 3100 mAh (environ 6 à 8 h d’autonomie typique)"
+tagline: "La mini console qui fait revivre vos classiques partout"
 ---
 
-La Anbernic RG28XX est une console rétro miniature pensée pour vous suivre partout, sans compromis sur le confort de jeu. Avec son écran IPS de 2,83 pouces parfaitement net et ses boutons au feeling précis, elle redonne vie aux classiques 8, 16 et 32 bits. Son système Linux optimisé pour l’émulation offre une interface simple, rapide et prête à l’emploi. Compacte mais endurante, elle tient des heures dans la poche… et encore plus longtemps dans la main. Que vous soyez nostalgique ou nouveau venu dans le rétro, la RG28XX est un concentré de plaisir à glisser dans n’importe quelle poche.
+L’Anbernic RG28XX est une console rétro ultra-compacte pensée pour rejouer à vos classiques partout, sans compromis sur le confort. Son écran IPS 2,83" laminé OCA offre une excellente lisibilité et des couleurs éclatantes malgré son format miniature. Grâce à son SoC ARM double cœur taillé pour l’émulation et sa batterie de 3100 mAh, elle assure de longues sessions de jeu dans le train, sur le canapé ou en voyage. Les emplacements microSD séparés pour le système et les jeux facilitent la gestion de vos bibliothèques. Avec son design inspiré des consoles portables d’époque, la RG28XX est un concentré de nostalgie dans la poche.
 
 ## Points forts
 
-- Format ultra compact, facilement transportable
-- Écran IPS 2,83” lumineux avec larges angles de vision
-- Interface Linux simple, rapide et optimisée pour l’émulation
-- Excellente autonomie pour sa taille grâce à la batterie 3100 mAh
-- Construction soignée et plusieurs coloris (gris, beige, transparent, lava orange)
-- Emulation fluide pour la plupart des systèmes 8/16 bits et certains 32 bits
+- Format ultra-compact facile à glisser dans une poche
+- Écran IPS 2,83" lumineux avec lamination OCA pour une meilleure lisibilité
+- SoC ARM optimisé pour l’émulation 8/16/32 bits avec bonne fluidité
+- Batterie 3100 mAh offrant une autonomie solide de 6 à 8 heures
+- Slots microSD séparés pour le système et la bibliothèque de jeux
+- Finition Anbernic soignée avec plusieurs coloris rétro
 
 ## Points faibles
 
-- Taille d’écran réduite, moins adaptée aux textes fins et aux longues sessions pour certains joueurs
-- Stockage basé uniquement sur microSD, nécessite une carte de bonne qualité
-- Pas pensé pour l’émulation des consoles de génération plus récente (3D avancée)
-- Système fermé par rapport aux consoles sous Android
+- Petit écran qui peut manquer de confort pour les longues sessions
+- RAM limitée et SoC modeste, pas adapté aux systèmes les plus récents (N64/PSP exigeants, etc.)
+- Cartes microSD généralement non fournies, budget à prévoir en plus
+- OS basé sur Linux nécessitant parfois un minimum de configuration pour en tirer le maximum
 
 ## À qui s’adresse la Anbernic RG28XX ?
 
-La Anbernic RG28XX s’adresse avant tout aux amateurs de rétro qui veulent une console véritablement de poche, à emporter dans les transports, en voyage ou au quotidien. Elle conviendra parfaitement aux joueurs nostalgiques des consoles 8 et 16 bits (NES, SNES, Mega Drive, Game Boy, etc.) et à ceux qui recherchent une machine simple, plug-and-play, sans réglages complexes. C’est aussi un excellent choix comme seconde console nomade pour les passionnés d’émulation qui possèdent déjà un modèle plus puissant, mais souhaitent un format ultra compact pour leurs sessions rapides.
+La Anbernic RG28XX s’adresse aux passionnés de rétro qui veulent une console d’appoint ultra-portable, idéale pour l’émulation 8 et 16 bits, quelques systèmes 32 bits légers et l’arcade classique. Elle conviendra parfaitement à ceux qui cherchent une machine simple à emporter partout, pour des sessions rapides dans les transports ou en voyage, ainsi qu’aux collectionneurs de consoles Anbernic séduits par son format mini et son look résolument rétro.
